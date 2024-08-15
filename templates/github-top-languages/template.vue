@@ -47,7 +47,7 @@
     theme: {
       type: String,
       default: 'light',
-      validator: (value: string) => validator.isIn(value, ['light, dark'])
+      validator: (value: string) => validator.isIn(value, ['light', 'dark'])
     },
     background: {
       type: String,

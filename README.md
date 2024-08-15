@@ -96,6 +96,9 @@ template example:
 
 ## Development Setup
 
+1. https://github.com/tirth-2001/express-typescript-vercel-part2/blob/master/package.json
+2. https://github.com/hebertcisco/vercel-typescript-express-api/blob/main/src/server.ts
+
 ```bash
 # install dependencies
 $ yarn

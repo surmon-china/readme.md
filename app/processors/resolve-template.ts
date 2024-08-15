@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { ROOT_PATH, MARKETPLACE_JSON, TEMPLATE_IDS } from './constants'
-import { HttpStatus, HttpError } from './error'
+import { ROOT_PATH, MARKETPLACE_JSON, TEMPLATE_IDS } from '../constants'
+import { HttpStatus, HttpError } from '../error'
 import { Params } from './resolve-params'
 
 export const resolveTemplateByUrl = async (templateUrl: string): Promise<string> => {

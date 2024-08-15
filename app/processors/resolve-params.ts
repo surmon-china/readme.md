@@ -1,4 +1,4 @@
-import { PARAM_FIELD_PREFIX } from './constants'
+import { PARAM_FIELD_PREFIX } from '../constants'
 
 export type GeneralParams = Record<string, string | void>
 export interface DataParams extends GeneralParams {}

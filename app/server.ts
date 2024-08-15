@@ -1,6 +1,6 @@
 import * as http from 'node:http'
-import { render } from './app/index'
-import { HttpStatus, isHttpError } from './app/error'
+import { HttpStatus, isHttpError } from './error'
+import { render } from './main'
 
 const server = http.createServer(async (request, response) => {
   const url = new URL(request.url!, `http://${request.headers.host}`)

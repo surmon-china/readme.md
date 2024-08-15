@@ -3,7 +3,7 @@ import type { GeneralParams } from './resolve-params'
 
 import { createSSRApp, h } from 'vue'
 import { renderToString } from 'vue/server-renderer'
-import { HttpError } from './error'
+import { HttpError } from '../error'
 
 export const renderVueComponent = async (component: ComponentOptions, comParams: GeneralParams): Promise<string> => {
   const componentProps: Record<string, any> = {}

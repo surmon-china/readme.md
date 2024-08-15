@@ -1,7 +1,7 @@
 import cssnano from 'cssnano'
 import * as esbuild from 'esbuild'
 import * as compiler from 'vue/compiler-sfc'
-import { HttpError } from './error'
+import { HttpError } from '../error'
 
 export interface ResolvedComponent {
   style: string | null

@@ -1,11 +1,10 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { HttpStatus, isHttpError } from '../app/error'
-import { render } from '../app'
+import { render } from '../app/main'
 
-export default async function handler(request: VercelRequest, response: VercelResponse) {
+export default async function handler(request, response) {
   try {
     const now = new Date()
-    const url = new URL(request.url!, `http://${request.headers.host}`)
+    const url = new URL(request.url, `http://${request.headers.host}`)
     const rendered = await render(url.searchParams)
     const renderTime = ((Date.now() - now.getTime()) / 1000).toFixed(2)
     console.info('🔹 [render:done]', `${renderTime}s`, '|', now.toLocaleString(), '|', url.search)

@@ -1,11 +1,11 @@
 import { defineComponent, ComponentOptions } from 'vue'
 import { renderModuleContext } from './context'
-import { getParamsObject } from './resolve-params'
-import { resolveTemplate } from './resolve-template'
-import { resolveComponent } from './resolve-component'
-import { resolveModule } from './resolve-module'
-import { renderVueComponent } from './render-vue'
-import { renderSVG } from './render-svg'
+import { getParamsObject } from './processors/resolve-params'
+import { resolveTemplate } from './processors/resolve-template'
+import { resolveComponent } from './processors/resolve-component'
+import { resolveModule } from './processors/resolve-module'
+import { renderVueComponent } from './processors/render-vue'
+import { renderSVG } from './processors/render-svg'
 
 export interface ComponentConfig {
   defaultCacheSeconds?: number

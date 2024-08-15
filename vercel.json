@@ -1,21 +1,15 @@
 {
+  "outputDirectory": "dist",
   "functions": {
-    "api/render.ts": {
-      "memory": 208,
-      "maxDuration": 10,
-      "includeFiles": "templates/**/*"
-    },
-    "api/marketplace.ts": {
-      "memory": 128
-    },
-    "api/analytics.ts": {
-      "memory": 128
+    "api/*.js": {
+      "memory": 128,
+      "maxDuration": 10
     }
   },
   "redirects": [
     {
       "source": "/",
-      "destination": "https://github.com/surmon-china/readme.vue"
+      "destination": "https://github.surmon.me/readme-vue"
     }
   ]
 }

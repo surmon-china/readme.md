@@ -6,16 +6,18 @@
     "resolveJsonModule": true,
     "lib": ["dom", "esnext"],
     "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "declaration": true,
     "noImplicitAny": false,
     "strictNullChecks": true,
+    "sourceMap": true,
     "baseUrl": ".",
+    "outDir": "./dist",
     "paths": {
       "@stores": ["./app/stores/index.ts"],
       "@components": ["./app/components/index.ts"]
     }
   },
-  "include": ["api/**/*", "app/**/*", "schemas/**/*", "templates/**/*", "server.ts"],
+  "include": ["app/**/*", "schemas/**/*", "templates/**/*"],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "installCommand": "pnpm install",
+  "devCommand": "pnpm run dev",
+  "buildCommand": "pnpm run build",
+  "builds": [
+    {
+      "src": "app/server.ts",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["dist/**/*", "templates/**/*"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app/server.ts"
+    }
+  ]
+}
